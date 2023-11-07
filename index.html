@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xpress Truckers | Landing Page</title>
+    <link rel="icon" href="assets/logos/logo-w-icon.svg" />
+    <script defer src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- materialize js -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
+    <!-- page-script -->
+    <script defer src="script.js"></script>
+    <!-- Materialize css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- materialize icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- tailwind css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <!-- page css -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <!-- ==============header================= -->
+    <header class="relative">
+      <nav
+        id="navbar"
+        class="nav-extended bg-transparent align-center fixed z-50 border-bottom-secondary font-bold"
+      >
+        <div class="nav-wrapper container p-4">
+          <a class="brand-logo mt-2" href="/"
+            ><img src="/assets/logos/logo-no-icon.svg"
+          /></a>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about-us">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li>
+              <a class="color-secondary" href="#contact-us">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <ul id="slide-out" class="sidenav black color-light">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about-us">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a class="color-secondary" href="#contact-us">CONTACT US</a></li>
+      </ul>
+    </header>
+    <!-- ======================================== -->
+    <!-- ==============main====================== -->
+    <main>
+      <!-- ==============sections================ -->
+      <section
+        id="home"
+        style="background-image: url(assets/backgrounds/home-bg.png)"
+        class="bg-no-repeat bg-cover bg-center"
+      >
+        <article
+          id="hero__content"
+          style="backdrop-filter: blur(10px)"
+          class="absolute inset-0 grid place-items-center"
+        >
+          <div class="container m-auto max-w-max p-10 bl-secondary">
+            <div class="flex flex-col gap-5 color-light">
+              <h1 class="text-4xl font-bold">
+                ORDER A TRUCK FROM ANY PART OF THE COUNTRY
+              </h1>
+              <h5 class="text-2xl font-regular">You request, we deliver</h5>
+              <div class="btns flex gap-5">
+                <a
+                  href="#contact-us"
+                  class="btn btn-large btn-primary bg-transparent border-secondary hover-secondary"
+                  >Contact Us</a
+                >
+                <a href="#" class="btn btn-large bn13">Try it Out</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="container m-6" id="about-us">
+        <article class="container p-10">
+          <div class="row gap-10">
+            <div class="col l6 m6 sm12 flex flex-col gap-5 p-2 col-l">
+              <img src="assets/asset-about.png" />
+            </div>
+            <div class="col l6 m6 sm12 flex flex-col gap-5 col-r">
+              <h1
+                class="text-4xl font-bold relative color-charcoal section__header"
+              >
+                ABOUT US
+              </h1>
+              <p class="text-2xl font-regular lh-about">
+                <span class="font-bold color-secondary">Xpress Truckers</span>
+                is a revolutionary platform that connects you with local truck
+                drivers for all your heavy commercial transportation needs. Our
+                mission is to make transporting goods more efficient,
+                affordable, and accessible. Whether you're a business owner
+                looking to move construction materials, a farmer needing to
+                transport produce, or anyone in need of long-distance
+                transportation services, Xpress Truckers has you covered.
+              </p>
+              <p class="text-2xl font-regular lh-about">
+                With our user-friendly app, you can easily find and book a
+                nearby truck driver with just a few clicks. We prioritize
+                safety, reliability, and quality service, so you can trust us
+                with your transportation needs.
+              </p>
+              <p class="text-2xl font-regular lh-about">
+                Thank you for choosing Xpress Truckers. We look forward to
+                serving you and simplifying your transportation experience.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section
+        id="services"
+        style="background-image: url(assets/backgrounds/services-bg.jpeg)"
+        class="relative bg-no-repeat bg-cover bg-bottom"
+      >
+        <article
+          style="background-color: rgba(0, 0, 0, 0.5)"
+          class="absolute inset-0 grid place-items-center"
+        >
+          <div class="container col-t h-100 flex flex-col">
+            <div class="container max-w-2xl">
+              <div class="container">
+                <h1
+                  class="text-4xl max-w-max ml-5 font-bold relative color-light section__header"
+                >
+                  SERVICES
+                </h1>
+              </div>
+              <div class="row">
+                <div class="col flex flex-col gap-4 items-center l6 m6 s12">
+                  <div
+                    class="card p-4 flex flex-col items-center justify-evenly"
+                  >
+                    <img src="assets/icons/moving-out.svg" />
+                    <h3 class="text-xl font-bold text-center">MOVING OUT</h3>
+                  </div>
+                  <div
+                    class="card p-4 flex flex-col items-center justify-evenly"
+                  >
+                    <img src="assets/icons/construction-truck.svg" />
+                    <h3 class="text-xl font-bold text-center">
+                      TRANSPORTATION OF CONSTRUCTION MATERIAL
+                    </h3>
+                  </div>
+                </div>
+                <div class="col flex flex-col gap-4 items-center l6 m6 s12">
+                  <div
+                    class="card p-4 flex flex-col items-center justify-evenly"
+                  >
+                    <img src="assets/icons/farm-truck.svg" />
+                    <h3 class="text-xl font-bold text-center">
+                      TRANSPORTATION OF FARM PRODUCE
+                    </h3>
+                  </div>
+                  <div
+                    class="card p-4 flex flex-col items-center justify-evenly"
+                  >
+                    <img src="assets/icons/transit-truck.svg" />
+                    <h3 class="text-xl font-bold text-center">
+                      LONG DISTANCE TRANSPORTATION OF GOODS
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="contact-us">
+        <div class="container py-12 max-w-7xl">
+          <div class="row">
+            <div class="col col-t l6 m6 s12">
+              <h1
+                class="text-4xl font-bold relative color-charcoal section__header"
+              >
+                GET IN TOUCH
+              </h1>
+              <p class="color-gray mt-10">
+                Need any help? Just send a message via our email address
+              </p>
+              <div class="container py-8">
+                <form action="#">
+                  <div class="row">
+                    <div class="col l6 m12 s6 input-field">
+                      <input id="name_text" type="text" required />
+                      <label for="name_text">Name</label>
+                    </div>
+                    <div class="col l6 m12 s6 input-field">
+                      <input id="email_text" type="email" required />
+                      <label for="email_text">Email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col l12 m12 s12 input-field">
+                      <input id="subject_text" type="text" required />
+                      <label for="subject_text">Subject</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col l12 m12 s12 input-field">
+                      <textarea
+                        name="message"
+                        class="materialize-textarea"
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        data-length="120"
+                      ></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col l12 m12 s12">
+                      <button
+                        style="width: 100% !important"
+                        class="btn btn-large btn-primary bg-primary w-100"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col col-t l6 m6 s12">
+              <h1
+                class="text-4xl font-bold relative color-charcoal section__header"
+              >
+                WHY CHOOSE US ?
+              </h1>
+              <div class="container text-center">
+                <p class="text-2xl font-regular lh-about">
+                  Choosing
+                  <span class="color-secondary">Xpress Truckers</span> is your
+                  smartest move for hassle-free, reliable, and cost-effective
+                  heavy commercial transportation. We stand out from the rest
+                  because we prioritize your needs.
+                </p>
+
+                <p class="text-2xl font-regular lh-about">
+                  Our platform offers a vast network of experienced truck
+                  drivers who are ready to assist you, no matter the task. We've
+                  simplified the entire process – from finding drivers, booking
+                  your trips, to tracking your goods.
+                </p>
+                <p class="text-2xl font-regular lh-about">
+                  Join our growing community and experience why so many
+                  businesses and individuals trust us for all their
+                  transportation needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== -->
+    </main>
+    <!-- ======================================== -->
+    <!-- ==============footer===================== -->
+    <footer class="page-footer bg-primary-light relative">
+      <div class="">
+        <div class="row max-w-6xl">
+          <div class="col l3 m6 s12">
+            <img class="m-auto" src="assets/logos/logo-w-icon.svg" alt="" />
+          </div>
+          <div class="col l3 m6 s12">
+            <ul id="pages-list">
+              <li class="page"><a href="#" class="text-base" id="">Home</a></li>
+              <li class="page">
+                <a href="about" class="text-base" id="">About</a>
+              </li>
+              <li class="page">
+                <a href="services" class="text-base" id="">Services</a>
+              </li>
+              <li class="page">
+                <a href="#contact-us" class="text-base" id="">Contact us</a>
+              </li>
+              <li class="page">
+                <a href="#" class="color-dark font-bold text-xl" id=""
+                  >Try our web app</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col l3 m6 s12">
+            <ul>
+              <li><a href="#">Getting started</a></li>
+              <li><a href="#">Payment Options</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Getting Started</a></li>
+            </ul>
+          </div>
+          <div class="col l3 m6 s12">
+            <ul>
+              <li>
+                <a class="flex gap-2" href="#"
+                  ><span
+                    ><img src="assets/icons/phone-icon.svg" alt="phone"
+                  /></span>
+                  0712345678</a
+                >
+              </li>
+              <li>
+                <a class="flex gap-2" href="#"
+                  ><span><img src="assets/icons/mail-icon.svg" alt="" /></span>
+                  xpresstruckers@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row bg-primary py-4 px-0 mb-0">
+          <p class="text-center color-light">
+            &copy; 2023 Xpress Truckers. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
