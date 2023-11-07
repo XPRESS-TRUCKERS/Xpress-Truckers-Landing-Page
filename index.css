@@ -185,7 +185,7 @@ section {
 }
 
 .card:hover {
-  transform: rotateY('10deg');
+  transform: rotateY(10deg);
   scale: 1.05;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -258,6 +258,12 @@ html {
 @media only screen and (max-width: 600px) {
   .card {
     width: 100%;
+    height: max-content;
+    gap: 1rem;
+  }
+  .btn {
+    padding: 0.25rem 1rem !important;
+    /* line-height: 20px; */
     height: max-content;
   }
   article {
