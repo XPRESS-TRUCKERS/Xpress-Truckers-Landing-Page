@@ -15,8 +15,17 @@
 
 * {
   box-sizing: border-box;
+  /* border: 1px red solid; */
 }
 
+article,
+img {
+  max-width: 100%;
+}
+
+img {
+  object-fit: cover;
+}
 body {
   background-color: var(--color-fanta-white);
 }
@@ -71,6 +80,7 @@ header ul li:hover {
 nav {
   transition: inherit;
   height: 90px !important;
+  max-width: 100vw;
   font-family: open sans, sans-serif;
 }
 
@@ -81,6 +91,7 @@ nav ul li:hover {
 section {
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
+  overflow-y: hidden;
 }
 
 .lh-about {
@@ -242,4 +253,14 @@ html {
   background-color: #00000085 !important;
   backdrop-filter: blur(10px);
   transition: background-color 200ms linear;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    height: max-content;
+  }
+  article {
+    padding: 0rem !important;
+  }
 }
