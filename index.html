@@ -42,9 +42,9 @@
         id="navbar"
         class="nav-extended bg-transparent align-center fixed z-50 border-bottom-secondary font-bold"
       >
-        <div class="nav-wrapper container p-4">
+        <div class="nav-wrapper container w-100 p-4">
           <a class="brand-logo mt-2" href="/"
-            ><img src="/assets/logos/logo-no-icon.svg"
+            ><img src="assets/logos/logo-no-icon.svg" alt="logo"
           /></a>
           <a href="#" data-target="slide-out" class="sidenav-trigger"
             ><i class="material-icons">menu</i></a
@@ -73,7 +73,7 @@
       <section
         id="home"
         style="background-image: url(assets/backgrounds/home-bg.png)"
-        class="bg-no-repeat bg-cover bg-center"
+        class="bg-no-repeat bg-cover bg-center black"
       >
         <article
           id="hero__content"
@@ -98,10 +98,13 @@
           </div>
         </article>
       </section>
-      <section class="container m-6" id="about-us">
+      <section class="container" id="about-us">
         <article class="container p-10">
           <div class="row gap-10">
-            <div class="col l6 m6 sm12 flex flex-col gap-5 p-2 col-l">
+            <div
+              style="overflow: hidden"
+              class="col l6 m6 sm12 flex flex-col gap-5 p-2 col-l"
+            >
               <img src="assets/asset-about.png" />
             </div>
             <div class="col l6 m6 sm12 flex flex-col gap-5 col-r">
@@ -257,16 +260,16 @@
               <div class="container text-center">
                 <p class="text-2xl font-regular lh-about">
                   Choosing
-                  <span class="color-secondary">Xpress Truckers</span> is your
-                  smartest move for hassle-free, reliable, and cost-effective
-                  heavy commercial transportation. We stand out from the rest
-                  because we prioritize your needs.
+                  <span class="color-secondary font-bold">Xpress Truckers</span>
+                  is your smartest move for hassle-free, reliable, and
+                  cost-effective heavy commercial transportation. We stand out
+                  from the rest because we prioritize your needs.
                 </p>
 
                 <p class="text-2xl font-regular lh-about">
                   Our platform offers a vast network of experienced truck
                   drivers who are ready to assist you, no matter the task. We've
-                  simplified the entire process – from finding drivers, booking
+                  simplified the entire process from finding drivers, booking
                   your trips, to tracking your goods.
                 </p>
                 <p class="text-2xl font-regular lh-about">
@@ -291,12 +294,14 @@
           </div>
           <div class="col l3 m6 s12">
             <ul id="pages-list">
-              <li class="page"><a href="#" class="text-base" id="">Home</a></li>
               <li class="page">
-                <a href="about" class="text-base" id="">About</a>
+                <a href="#home" class="text-base" id="">Home</a>
               </li>
               <li class="page">
-                <a href="services" class="text-base" id="">Services</a>
+                <a href="#about-us" class="text-base" id="">About</a>
+              </li>
+              <li class="page">
+                <a href="#services" class="text-base" id="">Services</a>
               </li>
               <li class="page">
                 <a href="#contact-us" class="text-base" id="">Contact us</a>
@@ -319,7 +324,7 @@
           <div class="col l3 m6 s12">
             <ul>
               <li>
-                <a class="flex gap-2" href="#"
+                <a class="flex gap-2 items-center" href="#"
                   ><span
                     ><img src="assets/icons/phone-icon.svg" alt="phone"
                   /></span>
@@ -327,7 +332,7 @@
                 >
               </li>
               <li>
-                <a class="flex gap-2" href="#"
+                <a class="flex gap-2 items-center" href="#"
                   ><span><img src="assets/icons/mail-icon.svg" alt="" /></span>
                   xpresstruckers@gmail.com</a
                 >
