@@ -263,7 +263,6 @@ html {
   }
   .btn {
     padding: 0.25rem 1rem !important;
-    /* line-height: 20px; */
     height: max-content;
   }
   article {
