@@ -229,8 +229,8 @@ footer {
 }
 
 footer::after {
-  background: rgba(0, 0, 0, 0) url('img/footer-map-bg.png') no-repeat scroll
-    center center / 90% auto;
+  background: rgba(0, 0, 0, 0) url('assets/backgrounds/footer-map-bg.png')
+    no-repeat scroll center center / 90% auto;
   content: '';
   height: 100%;
   left: 0;
