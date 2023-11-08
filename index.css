@@ -275,4 +275,7 @@ html {
   article {
     padding: 0rem !important;
   }
+  video {
+    display: none;
+  }
 }
