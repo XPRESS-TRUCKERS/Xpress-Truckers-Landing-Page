@@ -13,6 +13,7 @@
     ></script>
     <!-- page-script -->
     <script defer src="script.js"></script>
+    <base href="./index.html" />
     <!-- Materialize css -->
     <link
       rel="stylesheet"
@@ -38,12 +39,13 @@
   <body>
     <!-- ==============header================= -->
     <header class="relative">
+      <!-- ==============Nav================= -->
       <nav
         id="navbar"
         class="nav-extended bg-transparent align-center fixed z-50 border-bottom-secondary font-bold"
       >
         <div class="nav-wrapper container w-100 p-4">
-          <a class="brand-logo mt-2" href="/"
+          <a class="brand-logo mt-2" href="index.html"
             ><img src="assets/logos/logo-no-icon.svg" alt="logo"
           /></a>
           <a href="#" data-target="slide-out" class="sidenav-trigger"
@@ -66,15 +68,27 @@
         <li><a class="color-secondary" href="#contact-us">CONTACT US</a></li>
       </ul>
     </header>
-    <!-- ======================================== -->
     <!-- ==============main====================== -->
     <main>
-      <!-- ==============sections================ -->
+      <!-- ==============sections - Home================ -->
       <section
         id="home"
-        style="background-image: url(assets/backgrounds/home-bg.png)"
-        class="bg-no-repeat bg-cover bg-center black"
+        style="background-image: url(assets/backgrounds/optimized-home.png)"
+        class="bg-no-repeat bg-cover bg-center black relative"
       >
+        <video
+          autoplay
+          muted
+          loop
+          id="myVideo"
+          style="width: 100%; height: 100%"
+        >
+          <source
+            src="assets/videos/istockphoto-1181000458-3.mp4"
+            type="video/mp4"
+          />
+          <p>Your browser does not support the video tag.</p>
+        </video>
         <article
           id="hero__content"
           style="backdrop-filter: blur(10px)"
@@ -82,7 +96,7 @@
         >
           <div class="container m-auto max-w-max p-10 bl-secondary">
             <div class="flex flex-col gap-5 color-light">
-              <h1 class="text-4xl font-bold">
+              <h1 style="max-width: 35ch" class="text-4xl font-bold">
                 ORDER A TRUCK FROM ANY PART OF THE COUNTRY
               </h1>
               <h5 class="text-2xl font-regular">You request, we deliver</h5>
@@ -98,6 +112,7 @@
           </div>
         </article>
       </section>
+      <!-- ==============sections - About-Us================ -->
       <section class="container" id="about-us">
         <article class="container p-10">
           <div class="row gap-10">
@@ -137,6 +152,7 @@
           </div>
         </article>
       </section>
+      <!-- ==============sections - Services================ -->
       <section
         id="services"
         style="background-image: url(assets/backgrounds/services-bg.jpeg)"
@@ -195,6 +211,7 @@
           </div>
         </article>
       </section>
+      <!-- ==============sections - Contact-Us================ -->
       <section id="contact-us">
         <div class="container py-12 max-w-7xl">
           <div class="row">
@@ -219,7 +236,7 @@
                       <label for="email_text">Email</label>
                     </div>
                   </div>
-                  <div class="row">
+                  <div class="row mb-0">
                     <div class="col l12 m12 s12 input-field">
                       <input id="subject_text" type="text" required />
                       <label for="subject_text">Subject</label>
@@ -229,6 +246,7 @@
                     <div class="col l12 m12 s12 input-field">
                       <textarea
                         name="message"
+                        style="min-height: 100px !important"
                         class="materialize-textarea"
                         id="message"
                         cols="30"
